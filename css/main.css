@@ -1,6 +1,7 @@
 /**** NOTES ******
 
----> Completed header for mobile. Need to adjust h2 in about section for mobile, then should move to work.
+---> Completed header and about section. Updated html for work section to match unplugged project.
+Added icons, but haven't styled. Start with CSS for work. Need to add flexbox properties.*/
 
 
 html {
@@ -17,14 +18,14 @@ body {
 
 .content-wrapper {
   width: 90%;
-  margin: 80px 0px;
+  margin: 50px 0px;
 }
 
 /**** Header ****/
 
 header {
   display: flex;
-  background: url('../img/hero.png');
+  background: url('../img/hero.png') center no-repeat;
   background-size: cover;
   justify-content: center;
 }
@@ -75,9 +76,17 @@ header h2 span {
 
 /**** About ****/
 
+#about .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 #about h2 {
   font-family: 'Lora', serif;
   font-size: 1.875em;              /*desktop - 36px*/
+  padding-left: 15px;
 }
 
 #about p {
