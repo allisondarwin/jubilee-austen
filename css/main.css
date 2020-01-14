@@ -76,6 +76,11 @@ header h2 span {
 
 /**** About ****/
 
+#about {
+  display: flex;
+  justify-content: center;
+}
+
 #about .content-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -86,73 +91,107 @@ header h2 span {
 #about h2 {
   font-family: 'Lora', serif;
   font-size: 1.875em;              /*desktop - 36px*/
-  padding-left: 15px;
+  /*padding-left: 15px;*/
 }
 
 #about p {
   font-size: 1.31em;              /*desktop - 21px*/
   color: #7f7f7f;
   line-height: 35px;            /*desktop - 40px*/
-  padding: 0 15px;
+  /*padding: 0 15px;*/
 }
 
 /**** Work ****/
 
 #work {
   background: #f9ceb7;
+  display: flex;
+  justify-content: center;
 }
 
+#work .skill-items {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#work .skill-items article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#work .fontawesome-icon {
+  color: #C49075;
+  font-size: 4.5em;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
 
 #work h3 {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 24px;                /*desktop - 24px*/
+  line-height: 32px;              /*desktop - 32px*/
+  width: 75%;
+  text-align: center;
 }
 
 #work p {
   font-family: 'Lora', serif;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 18px;                /*desktop - 18px*/
+  line-height: 30px;              /*desktop - 30px*/
 }
 
 /**** Contact *****/
 
 #contact {
   background: #ebebeb;
+  display: flex;
+  justify-content: center;
+}
+
+#contact .half-width {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 #contact img#contact-img {
-  border: 12px solid #ffffff;
+  border: 12px solid #ffffff;        /*desktop - 12px*/
 }
 
 
 #contact h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 1.875em;                /*desktop - 36px*/
+    line-height: 44px;              /*desktop - 44px*/
 }
 #contact #email-header{
-    font-size: 32px;
+    font-size: 1.75em;               /*desktop - 32px*/
     font-weight: 400;
-    line-height: 44px;
+    line-height: 44px;            /*desktop - 44px*/
     margin: -30px 0 5px 0;
 }
 #contact #socialmedia-header {
     font-weight: bold;
-    font-size: 29px;
-    line-height: 44px;
+    font-size: 1.5em;              /*desktop - 29px*/
+    line-height: 44px;            /*desktop - 44px*/
 }
 #contact a {
     text-decoration: none;
     color: #c49075;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.72em;              /*desktop - 28px*/
 }
 #contact ul {
+    display: flex;
+    justify-content: space-evenly;
     list-style: none;
+    padding: 0;
+    width: 100%;
 }
 #contact ul li {
-     display: inline-block;
+     /*display: inline-block;*/
 }
 #contact ul img {
-    font-size: 32px;
+    font-size: 32px;             /*desktop - 32px*/
 }
